@@ -1,7 +1,7 @@
 let slideIndex = 0;
-showSlides();
+imgCarousel();
 
-function showSlides() {
+function imgCarousel() {
     let slides = document.getElementsByClassName("page6-1carousel")[0].getElementsByTagName("img");
     
     for (let i = 0; i < slides.length; i++) {
@@ -15,5 +15,5 @@ function showSlides() {
 
     slides[slideIndex - 1].style.opacity = "1";
     
-    setTimeout(showSlides, 2000);
+    setTimeout(imgCarousel, 2000);
 }
